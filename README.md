@@ -1,7 +1,7 @@
 # The Rise of the Containers (semi-guided) material
 
 
-ROTC is a 2-day hands-on, semi-guided workshop, participants will explore Kubernetes and go deeper into its various components. This repositopry contains learning material for the workshop.
+ROTC is a 2-day hands-on, semi-guided workshop, participants will explore Kubernetes and go deeper into its various components. This repository contains learning material for the workshop.
 
 
 
