@@ -50,11 +50,7 @@ curl -X DELETE http://localhost:8000/users/1 -H "Content-Type: application/json"
 
 ## Pre-requisites
 
-You should have Colima started with the kubernetes flag enabled.
-
-```
-colima start --kubernetes
-```
+You should have Rancher started with the current version of kubernetes active.
 
 ## Testing the App in Docker-Compose
 
