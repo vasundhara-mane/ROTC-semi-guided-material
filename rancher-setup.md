@@ -32,14 +32,14 @@ Our installation will now point to the rancher desktop. And when we run the comm
 ![showing use-context in the CLI](https://github.com/twlabs/ROTC-semi-guided-material/blob/rancher-for-rotc/images/use-context.png)
 
 8. During your set up, you may also find an error about symlink:
-![showing Rancher desktop diagnostics with symlin problems](https://github.com/twlabs/ROTC-semi-guided-material/blob/rancher-for-rotc/images/use-context.png)
+![showing Rancher desktop diagnostics with symlin problems](https://github.com/twlabs/ROTC-semi-guided-material/blob/main/images/Symlink-error.png)
 
 This means the docker-buildx symlink in Rancher Desktop is pointing to the wrong location. You can fix this by removing the symlink 
 ```shell
 rm ~/.docker/cli-plugins/docker-buildx
 ```
 Upon restarting Rancher desktop it will automatically recreate the correct symlink on restart. 
-![showing Rancher desktop diagnostics without problems](https://github.com/twlabs/ROTC-semi-guided-material/blob/rancher-for-rotc/images/use-context.png)
+![showing Rancher desktop diagnostics without problems](https://github.com/twlabs/ROTC-semi-guided-material/blob/main/images/diagnostics.png)
 
-Now you are ready for the Rise of The Containers Workshop!
+<h3>Now you are ready for the Rise of The Containers Workshop!</h3>
  
