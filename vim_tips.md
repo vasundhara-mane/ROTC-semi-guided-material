@@ -1,6 +1,6 @@
-<h1>Tips to navigate Vim</h1>
+<h1>Tips to navigate Vi</h1>
 
-In the KodeKloud lab environment it is helpful to know how to navigate text. Below are some useful commands to help.
+In the KodeKloud lab environment you are required to use the **Vi** editor. Below are some useful commands to help you complete the exercises.
 
 <h2>grep</h2>
 
