@@ -78,11 +78,11 @@ Holly is happy that you have a good understanding of the solution and has now pr
 
 4. Holly now would like you to create a `service` of type ClusterIP for the postgres database `deployment` resource and expose the same container port in the service (this should be port 5432 for postgres). Once again deploy it to ensure everything works before proceeding.
 
-5. Holly is pleased with your progress as you've now showed her that the database is up and running, she's keen to see the backend API communicate with this database. She would like you to create a new `deployment` resources for the backend API. As you've already run docker-compose earlier to test the solution you should already have an image called `k8s-assignment-backend` available locally (you can run `docker images` to verify this). Assuming it is there then you can specify the following in your deployment as it will use the local image as this image does not exist in Docker Hub:
+5. Holly is pleased with your progress as you've now showed her that the database is up and running, she's keen to see the backend API communicate with this database. She would like you to create a new `deployment` resources for the backend API. As you've already run docker-compose earlier to test the solution you should already have an image called `final_assignment-backend` available locally (you can run `docker images` to verify this). Assuming it is there then you can specify the following in your deployment as it will use the local image as this image does not exist in Docker Hub:
 
 ```
 imagePullPolicy: Never
-image: k8s-assignment-backend
+image: final_assignment-backend
 ```
 
 Once again you'll need to add similar environment variables as per the docker-compose file and the database password should come from the kubernetes secret. Once again deploy it to ensure everything works before proceeding.
