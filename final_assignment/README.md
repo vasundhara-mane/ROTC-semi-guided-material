@@ -102,3 +102,21 @@ She hopes you can interact with the REST API just like you have done when you ra
 9. Lastly she would like the data to be persistent, currently if you delete the resources the data is deleted too. She believes you can create a `PersistentVolume` and a `PersistentVolumeClaim` and associate it with a mounted volume in the postgres database `deployment` resource. She is happy for you to use a local host path to store the data outside of the Kubernetes cluster. Once deployed without any errors Holly would like you to verify it works by testing that data persists after deleteing and recreating all the Kubernetes resources.
 
 10. Holly's had a thought, she believe's that having all resources in a single fle `deployment.yaml` is not very scalable or maintainable, she would like you to split it up into smaller logical files, perhaps one for the namespace, one for the backend API and one for the database. You can still apply kubernetes changes with one command but instead you reference the folder rather than the file.
+
+## Environment Troubleshooting
+
+Please install one of:
+
+1. Rancher Desktop (preferred) - `brew install --cask rancher`
+2. colima - `brew install colima`
+3. minikube - `brew install minikube`
+
+```sh
+#./activate-k8s-env.sh [tool], e.g.,
+
+./activate-k8s-env.sh rancher-desktop
+
+# or
+./activate-k8s-env.sh colima
+```
+
