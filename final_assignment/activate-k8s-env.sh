@@ -25,6 +25,15 @@ success() {
 	echo -e "${GREEN}[INFO]${RESET}" "$@" >&2
 }
 
+error_if_docker_env_varialbe_is_set() {
+	if [ -n "${DOCKER_HOST+x}" ]; then
+		error "DOCKER_HOST is set! Likely in your ~/.bashrc or ~/.zshrc. This overrides any other config and interferes with docker context."
+		error "DOCKER_HOST=${DOCKER_HOST:-}"
+		error "Please remove and start a fresh shell before proceeding!"
+		exit 1
+	fi
+}
+
 check_colima_installed() {
 	if type colima &>/dev/null; then
 		AVAILABLE_TOOLS+=("colima")
@@ -174,6 +183,8 @@ if ! tool_available "${TOOL}"; then
 	error "$TOOL not found" 1>&2
 	exit 1
 fi
+
+error_if_docker_env_varialbe_is_set
 
 case "${TOOL}" in
 colima)

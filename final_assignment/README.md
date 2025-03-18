@@ -108,7 +108,7 @@ She hopes you can interact with the REST API just like you have done when you ra
 Please install one of:
 
 1. Rancher Desktop (preferred) - `brew install --cask rancher`
-2. colima - `brew install colima`
+2. colima - `brew install colima kubectl`
 3. minikube - `brew install minikube`
 
 ```sh
