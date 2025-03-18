@@ -176,7 +176,7 @@ if ! tool_available "${TOOL}"; then
 fi
 
 case "${TOOL}" in
-colima-desktop)
+colima)
 	error_if_minikube_docker_is_used
 	check_colima_running
 	activate_docker_context colima
